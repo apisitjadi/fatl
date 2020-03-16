@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "notifyCompany": false,
+  "notifyClient": false,
+  "setCompanyFlag": false,
+  "setClientFlag": true,
+  "clientInfo": { "id":7869115,
+    "name":"อ้อย (พัทยาใต้)",
+    "addressLine1":"หลังบิ๊กซีพัทยาใต้ ใกล้ๆร้านนั่งนัว",
+    "addressLine2":"",
+    "addressLine3":"",
+    "taxId":"",
+    "branch":null,
+    "contactPerson":"",
+    "contactNumber":"089-7728337",
+    "mobileNumber":"",
+    "faxNumber":"",
+    "contactEmail":"",
+    "defaultCreditDays":0,
+    "vatRate":0,
+    "contactType":3,
+    "zipCode":null
+  }
+}
