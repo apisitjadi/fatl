@@ -46,32 +46,20 @@ var optionsUpdate = {
   body: "{\"documentId\":\"11103696\",\"_type\":\"TaxInvoice\"}"
 };
 
-function getCookies(callback){
-
-    request('https://app.flowaccount.com', function (error, response, body) {
-      console.log(response);
-        if (!error && response.statusCode == 200) {
-            return callback(null, response.headers['set-cookie']);
-        } else {
-            return callback(error);
-        }
-    })
-}
-
-// getCookies(function(err, res){
-//     if(!err)
-//        console.log(res)
-// })
-
 async function run() {
   const browser = await puppeteer.launch({
     headless: false
   });
   const page = await browser.newPage();
 
-  await page.goto('https://app.flowaccount.com/CompanyAdmin/th#/');
-  await page.screenshot({path: 'fb.png'});
-
+  await page.goto('https://app.flowaccount.com/CompanyAdmin/th#/Invoice');
+  await page.setViewport({ width: 1600, height: 900});
+  await page.type('#Email','mamapudong01@gmail.com', {delay: 0});
+  await page.type('#Password','Pudong_1234', {delay: 0});
+  await page.click('.login-btn');
+  // await page.waitForNavigation();
+  await page.screenshot({path: 'flowaccount.png'});
+  await page.waitForNavigation();
   browser.close();
 }
 

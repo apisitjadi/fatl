@@ -1,0 +1,25 @@
+{
+  "name": "fatl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CheckForInformationUpdates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apisitjadi/fatl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apisitjadi/fatl/issues"
+  },
+  "homepage": "https://github.com/apisitjadi/fatl#readme",
+  "dependencies": {
+    "puppeteer": "^2.1.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
